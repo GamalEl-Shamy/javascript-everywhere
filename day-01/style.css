@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc; 
+    color: #0f172a; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    border: #3b82f6 2px solid;
+    border-radius: 7px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+    
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+p#message {
+    font-size: 1.25rem;
+    color: #64748b; 
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#changeTextBtn {
+    background-color: #3b82f6; 
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+#changeTextBtn:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+
+#changeTextBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px -1px rgba(59, 130, 246, 0.3);
+}
+
+#consoleBtn {
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #cbd5e1; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+#consoleBtn:hover {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#consoleBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+button:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
